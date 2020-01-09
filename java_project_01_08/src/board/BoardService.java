@@ -63,7 +63,7 @@ public class BoardService {
 	}
 	
 	//글 수정을 처리하는 메소드
-	//리턴 타입은 삽입고 동일
+	//리턴 타입은 삽입과 동일
 	//매개변수도 삽입과 동일
 	public boolean updateBoard(Board board) {
 		//글 번호에 해당하는 데이터를 찾으면 board로 대체
