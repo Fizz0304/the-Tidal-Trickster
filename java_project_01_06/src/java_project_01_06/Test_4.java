@@ -4,7 +4,7 @@ public class Test_4 {
 
 	public static void main(String[] args) {
 		//초기 데이터를 가지고 2차원 배열 생성
-		String [][] champ = {{"피즈", "노틸러스","제드"}, {"시비르", "코그모", "자야"}};
+		String [][] champ = {{"브라움","노틸러스",  "벨코즈"}, {"시비르", "코그모", "자야"}};
 		
 		//인덱스를 이용해 배열의 모든 데이터 접근하기
 		int rowCnt = champ.length;

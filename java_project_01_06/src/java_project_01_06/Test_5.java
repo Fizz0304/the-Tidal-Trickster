@@ -44,7 +44,17 @@ public class Test_5 {
 					continue;
 				}
 			}
-		}	
+		}
+		int len = lotto.length;
+		for(int i = 0; i < len - 1; i = i + 1){
+			for(int j = i + 1; j < len; j = j + 1){
+				if(lotto[i] > lotto[j]){
+					int temp = lotto[i];	//swap을 발생
+					lotto[i] =lotto[j];
+					lotto[j] = temp;
+				}
+			}
+		}
 			// 입력 받은 데이터 출력
 			for (int temp : lotto) {
 				System.out.print(temp + "\t");

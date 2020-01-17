@@ -3,7 +3,7 @@ package quick;
 public class Main {
 
 	public static void main(String[] args) {
-		String [] ar = {"R", "B", "R", "B", "B", "B", "R", "R", "R", "B", "R", "B"};
+		String [] ar = {"R", "B", "B", "B", "R", "B", "R", "R", "R"};
 		int len = ar.length;
 		
 		Test.ballCount(0, len-1,  ar);
@@ -11,6 +11,6 @@ public class Main {
 		for(String e : ar) {
 			System.out.print(e + "\t");
 		}
-			
+
 	}
 }
