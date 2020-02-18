@@ -1,0 +1,40 @@
+Defeat	Tristana
+
+Defeat	Lucian
+
+Defeat	Tristana
+
+Defeat	Lucian
+
+Victory	Taliyah
+
+Defeat	Galio
+
+Defeat	Pyke
+
+Victory	Xerath
+
+Defeat	Senna
+
+Defeat	Leona
+
+Victory	Jhin
+
+Victory	Xayah
+
+Defeat	Lucian
+
+Defeat	Tristana
+
+Defeat	Varus
+
+Victory	Ornn
+
+Defeat	Senna
+
+Defeat	Aphelios
+
+Defeat	Pantheon
+
+Victory	Aphelios
+

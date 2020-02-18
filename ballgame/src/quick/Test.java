@@ -1,4 +1,4 @@
-package quick;
+	package quick;
 
 public class Test {
 	

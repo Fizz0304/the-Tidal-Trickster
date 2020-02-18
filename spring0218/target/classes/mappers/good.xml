@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+ <!-- 여기부터 데이터베이스 마다 달라진다. -->
+ <mapper namespace = "good">
+ 	<!-- goods 테이블의 모든 데이터를 읽어 오는 SQL -->
+ 	<!-- resultType은 select 절의 칼럼들을 모두 저장할 수 있는 자료형 --> <!-- 칼럼이 여러 개 일땐 java.util.map이나 DTO클래스가 된다.  -->
+ 	<!-- parameterType은 where 절에 대입할 데이터의 자료형 -->
+ 	<select id = "goodlist" resultType = "Good" >
+ 		 		select code, name, manufacture, price	
+ 				from goods
+ 	</select>
+ 	
+ <!-- code를 가지고 하나의 데이터를 찾아오는 SQL -->
+  	<select id = "gooddetail" resultType = "Good" parameterType= "java.lang.Integer" >
+ 		 		select code, name, manufacture, price	
+ 				from goods
+ 				where code = #{code}
+ 	</select>
+ 	
+ <!-- goods 테이블에 데이터를 삽입하는 SQL -->
+ 	<insert id="goodinsert" parameterType ="Good">
+ 				insert into goods(code, name, manufacture, price)
+ 				values(#{code}, #{name}, #{manufacture}, #{price})
+ 	</insert>
+ 
+ <!-- goods 테이블의 데이터를 수정하는 SQL -->
+  	<update id="goodupdate" parameterType ="Good">
+ 				update goods(code, name, manufacture, price)
+ 				set name = #{name}, manufacture = #{manufacture}, price = #{price}
+ 				where code = #{code}
+ 	</update>
+ 	
+ <!-- goods 테이블의 데이터를 삭제하는 SQL -->
+   	<delete id="gooddelete" parameterType ="java.lang.Integer">
+ 				delete  goods
+ 				where code = #{code}				
+ 	</delete>
+ </mapper>
+ 
+ 
